@@ -7,44 +7,50 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="description" content="Сайт приложения Pink">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
 	<header class="page-header">
-		<a class="page-header__logo">
-			<picture>
-				<img class="page-header__logo-image" src="" alt="">
-			</picture>
-		</a>
-		<nav class="main-nav">
-			<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть главное меню</span></button>
-			<ul class="site-navigation">
-				<li class="site-navigation__item">Главная</li>
-				<li class="site-navigation__item">Фотографии</li>
-				<li class="site-navigation__item">Конкурс</li>
-				<li class="site-navigation__item">HTML Academy</li>
-			</ul>
-		</nav>
+		<div class="page-header__wrapper">
+			<a class="page-header__logo">
+				<picture>
+					<source media="min-width: 1200px" srcset="img/logo-pink-white-desktop.svg">
+					<source media="min-width: 660px" srcset="img/logo-pink-white-tablet.svg">
+					<img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Pink" width="75" height="22">
+				</picture>
+			</a>
+			<nav class="main-nav">
+				<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть главное меню</span></button>
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a>Главная</a></li>
+					<li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+					<li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+					<li class="main-nav__item"><a href="#">HTML Academy</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 	<main>
 		<section class="intro">
 			<b class="intro__slogan">Взгляните на жизнь иначе!</b>
 			<a class="intro__download-link" href="#">Скачать приложение</a>
-			<ul class="intro__links-list">
+			<ul class="intro__list">
 				<li class="intro__item">
 					<a class="intro__link" href="#">
-						<img class="intro__link-image" src="" alt="Ссылка на загрузку версии для iOS">
+						<img class="intro__link-image" src="img/logo-apple.svg" alt="Ссылка на загрузку версии для iOS" width="47" height="56">
 					</a>
 				</li>
 				<li class="intro__item">
 					<a class="intro__link" href="#">
-						<img class="intro__link-image" src="" alt="Ссылка на загрузку версии для Android">
+						<img class="intro__link-image" src="img/logo-android.svg" alt="Ссылка на загрузку версии для Android" width="43" height="47">
 					</a>
 				</li>
 				<li class="intro__item">
 					<a class="intro__link" href="#">
-						<img class="intro__link-image" src="" alt="Ссылка на загрузку версии для Windows">
+						<img class="intro__link-image" src="img/logo-microsoft.svg" alt="Ссылка на загрузку версии для Windows" width="44" height="41">
 					</a>
 				</li>
 			</ul>
@@ -53,18 +59,18 @@
 
 		<section class="information">
 			<p class="information__text">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
-			<ul class="information__features-list features-list">
-				<li class="features-list__item">
-					<h2 class="features-list__item-title">Поднимает настроение</h2>
-					<p class="features-list__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+			<ul class="information__list">
+				<li class="information__item">
+					<h2 class="information__item-title">Поднимает настроение</h2>
+					<p class="information__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
 				</li>
-				<li class="features-list__item">
-					<h2 class="features-list__item-title">Меняет мир вокруг</h2>
-					<p class="features-list__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+				<li class="information__item">
+					<h2 class="information__item-title">Меняет мир вокруг</h2>
+					<p class="information__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
 				</li>
-				<li class="features-list__item">
-					<h2 class="features-list__item-title">Заводит новых друзей</h2>
-					<p class="features-list__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+				<li class="information__item">
+					<h2 class="information__item-title">Заводит новых друзей</h2>
+					<p class="information__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
 				</li>
 			</ul>
 		</section>

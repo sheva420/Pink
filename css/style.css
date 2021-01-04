@@ -1,0 +1,137 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans";
+  font-display: swap;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: insert(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.list-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.link-reset {
+  text-decoration: none;
+  color: #ffffff;
+}
+.title-style {
+  margin: 0;
+  padding: 0;
+}
+.mp-reset {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/opensans.woff) format("woff"), url(../fonts/opensans.woff2) format("woff2");
+}
+@font-face {
+  font-family: "OpenSansBold";
+  src: url(../fonts/opensansbold.woff) format("woff"), url(../fonts/opensansbold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "OpenSansLight";
+  src: url(../fonts/opensanslight.woff) format("woff"), url(../fonts/opensanslight.woff2) format("woff2");
+}
+.page-header {
+  background-color: #283645;
+}
+.main-nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSansBold";
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.main-nav__item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.intro {
+  background-color: #1d2631;
+}
+.intro__slogan {
+  font-family: "OpenSansLight";
+  font-size: 40px;
+  font-weight: lighter;
+  color: #ffffff;
+}
+.intro__download-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "OpenSansBold";
+  font-size: 18px;
+  line-height: 18px;
+}
+.intro__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.intro__text {
+  font-family: "OpenSansLight";
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.information__text {
+  font-family: "OpenSansLight";
+  font-size: 24px;
+  color: #283645;
+}
+.information__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.information__item-title {
+  font-family: "OpenSansBold";
+  font-size: 18px;
+  line-height: 24px;
+}
+.information__item-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+.effect__title {
+  font-family: "OpenSansBold";
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.effect__text {
+  font-family: "OpenSansLight";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.effect__link {
+  font-family: "OpenSansLight";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #d22856;
+}
