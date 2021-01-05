@@ -1,0 +1,41 @@
+.reviews__author-name {
+	font-family: "OpenSansBold";
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	font-style: normal;
+}
+
+.reviews__author-name span {
+	font-family: "OpenSans";
+	font-weight: lighter;
+	font-size: 14px;
+	line-height: 30px;
+	color: @main-color;
+}
+
+.reviews__text {
+	font-size: 14px;
+	line-height: 30px;
+	color: @main-color;
+}
+
+@media (min-width: @tablet-width) {
+	.reviews__author-name {
+		font-size: 20px
+	}
+
+	.reviews__text {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.reviews__author-name {
+		font-size: 24px;
+	}
+	
+	.reviews__author-name span {
+		font-size: 18px;
+	}
+}

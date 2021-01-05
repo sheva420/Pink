@@ -16,8 +16,8 @@
 		<div class="page-header__wrapper">
 			<a class="page-header__logo">
 				<picture>
-					<source media="min-width: 1200px" srcset="img/logo-pink-white-desktop.svg">
-					<source media="min-width: 660px" srcset="img/logo-pink-white-tablet.svg">
+					<source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+					<source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
 					<img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Pink" width="75" height="22">
 				</picture>
 			</a>
@@ -84,15 +84,15 @@
 		<section class="reviews">
 			<div class="reviews__list slider__list">
 				<blockquote class="reviews__item slider__item">
-					<cite class="reviews__author-name">Николай Петров<span>25 лет, водитель трамвая</span></cite>
+					<cite class="reviews__author-name">Николай Петров <span>25 лет, водитель трамвая</span></cite>
 					<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 				</blockquote>
 				<blockquote class="reviews__item slider__item">
-					<cite class="reviews__author-name">Николай Петров<span>25 лет, водитель трамвая</span></cite>
+					<cite class="reviews__author-name">Николай Петров <span>25 лет, водитель трамвая</span></cite>
 					<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 				</blockquote>
 				<blockquote class="reviews__item slider__item">
-					<cite class="reviews__author-name">Николай Петров<span>25 лет, водитель трамвая</span></cite>
+					<cite class="reviews__author-name">Николай Петров <span>25 лет, водитель трамвая</span></cite>
 					<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 				</blockquote>
 			</div>
@@ -100,31 +100,31 @@
 
 		<section class="prices">
 			<table class="prices__table">
-				<thead>
+				<thead class="prices__head">
 					<tr>
 						<td></td>
-						<td>База <span class="prices__price">1,99 USD</span></td>
-						<td>Стандарт <span class="prices__price">3,99 USD</span></td>
-						<td>Анлим <span class="prices__price">9,99 USD</span></td>
+						<td class="prices__rate">База <span class="prices__price">1,99 USD</span></td>
+						<td class="prices__rate">Стандарт <span class="prices__price">3,99 USD</span></td>
+						<td class="prices__rate">Анлим <span class="prices__price">9,99 USD</span></td>
 					</tr>
 				</thead>
 				<tr>
-					<td>Розовый фильтр</td>
-					<td class="prices__yes"></td>
-					<td class="prices__yes"></td>
-					<td class="prices__yes"></td>
+					<td class="prices__feature">Розовый фильтр</td>
+					<td class="prices__yes"><span class="prices__feature">Розовый фильтр</span></td>
+					<td class="prices__yes"><span class="prices__feature">Розовый фильтр</span></td>
+					<td class="prices__yes"><span class="prices__feature">Розовый фильтр</span></td>
 				</tr>
 				<tr>
-					<td>Смайлики</td>
-					<td class="prices__no"></td>
-					<td class="prices__yes"></td>
-					<td class="prices__yes"></td>
+					<td class="prices__feature">Смайлики</td>
+					<td class="prices__no"><span class="prices__feature">Смайлики</span></td>
+					<td class="prices__yes"><span class="prices__feature">Смайлики</span></td>
+					<td class="prices__yes"><span class="prices__feature">Смайлики</span></td>
 				</tr>
 				<tr>
-					<td>Комментарии</td>
-					<td class="prices__no"></td>
-					<td class="prices__no"></td>
-					<td class="prices__yes"></td>
+					<td class="prices__feature">Комментарии</td>
+					<td class="prices__no"><span class="prices__feature">Комментарии</span></td>
+					<td class="prices__no"><span class="prices__feature">Комментарии</span></td>
+					<td class="prices__yes"><span class="prices__feature">Комментарии</span></td>
 				</tr>
 			</table>
 		</section>
@@ -133,15 +133,15 @@
 			<h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
 			<ul class="contacts__list">
 				<li class="contacts__item">
-					<b class="contacts__title">Звоните:</b>
+					<b class="contacts__item-title">Звоните:</b>
 					<a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
 				</li>
 				<li class="contacts__item">
-					<b class="contacts__title">Пишите:</b>
+					<b class="contacts__item-title">Пишите:</b>
 					<a class="contacts__text" href="#">mail@htmlacademy.ru</a>
 				</li>
 				<li class="contacts__item">
-					<b class="contacts__title">Приезжайте в гости:</b>
+					<b class="contacts__item-title">Приезжайте в гости:</b>
 					<span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
 				</li>
 			</ul>
@@ -151,7 +151,10 @@
 	<footer class="page-footer">
 		<div class="page-footer__logo">
 			<a class="page-footer__logo-link">
-				<img class="page-footer__logo-image" src="" alt="">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+					<img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения Pink" width="145" height="40">
+				</picture>
 			</a>
 		</div>
 		<div class="page-footer__social social">

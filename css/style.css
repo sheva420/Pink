@@ -69,12 +69,21 @@ img {
   text-decoration: none;
   color: #ffffff;
 }
+@media (min-width: 1200px) {
+  .main-nav__list {
+    font-family: "OpenSans";
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: none;
+  }
+}
 .intro {
   background-color: #1d2631;
 }
 .intro__slogan {
   font-family: "OpenSansLight";
   font-size: 40px;
+  line-height: 48px;
   font-weight: lighter;
   color: #ffffff;
 }
@@ -96,9 +105,22 @@ img {
   line-height: 24px;
   color: #ffffff;
 }
+@media (min-width: 1200px) {
+  .intro__slogan {
+    font-size: 50px;
+    line-height: 68px;
+  }
+  .intro__download-link {
+    font-size: 21px;
+  }
+  .intro__text {
+    font-size: 18px;
+  }
+}
 .information__text {
   font-family: "OpenSansLight";
   font-size: 24px;
+  line-height: 29px;
   color: #283645;
 }
 .information__list {
@@ -115,6 +137,26 @@ img {
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+}
+@media (min-width: 660px) {
+  .information__text {
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+@media (min-width: 1200px) {
+  .information__text {
+    font-size: 50px;
+    line-height: 68px;
+  }
+  .information__item-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .information__item-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 .effect__title {
   font-family: "OpenSansBold";
@@ -134,4 +176,144 @@ img {
   line-height: 24px;
   font-weight: 400;
   color: #d22856;
+}
+@media (min-width: 1200px) {
+  .effect__title {
+    line-height: 30px;
+  }
+  .effect__text {
+    font-family: "OpenSans";
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .effect__link {
+    font-family: "OpenSans";
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+.reviews__author-name {
+  font-family: "OpenSansBold";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: normal;
+}
+.reviews__author-name span {
+  font-family: "OpenSans";
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+.reviews__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+@media (min-width: 660px) {
+  .reviews__author-name {
+    font-size: 20px;
+  }
+  .reviews__text {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews__author-name {
+    font-size: 24px;
+  }
+  .reviews__author-name span {
+    font-size: 18px;
+  }
+}
+.prices__head td {
+  background-color: #283645;
+}
+.prices__head td:first-child {
+  background-color: transparent;
+}
+.prices__rate {
+  font-family: "OpenSansBold";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.prices__price {
+  font-family: "OpenSansLight";
+  font-weight: lighter;
+}
+.prices__feature {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+@media (min-width: 1200px) {
+  .prices__rate {
+    font-size: 18px;
+  }
+  .prices__price {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .prices__feature {
+    font-size: 18px;
+  }
+}
+.contacts__title {
+  font-family: "OpenSansLight";
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 29px;
+  color: #283645;
+}
+.contacts__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.contacts__item-title {
+  font-family: "OpenSansBold";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #283645;
+}
+.contacts__text {
+  font-family: "OpenSansLight";
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 33px;
+  color: #d22856;
+  text-decoration: none;
+}
+@media (min-width: 660px) {
+  .contacts__title {
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts__title {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+.copyright__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #283645;
+}
+@media (min-width: 1200px) {
+  .copyright__text {
+    font-size: 18px;
+  }
+}
+.social__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }

@@ -1,0 +1,41 @@
+.prices__head td {
+	background-color: @main-color;
+	&:first-child {
+		background-color: transparent;
+	}
+}
+
+.prices__rate {
+	font-family: "OpenSansBold";
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.prices__price {
+	font-family: "OpenSansLight";
+	font-weight: lighter;
+}
+
+.prices__feature {
+	font-size: 14px;
+	line-height: 30px;
+	color: @main-color;
+}
+
+@media (min-width: @desktop-width) {
+	.prices__rate {
+		font-size: 18px;
+	}
+	
+	.prices__price {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	
+	.prices__feature {
+		font-size: 18px;
+	}
+}
