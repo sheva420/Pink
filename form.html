@@ -13,20 +13,24 @@
 
 <body>
 	<header class="page-header">
-		<a class="page-header__logo">
-			<picture>
-				<img class="page-header__logo-image" src="" alt="">
-			</picture>
-		</a>
-		<nav class="main-nav">
-			<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть главное меню</span></button>
-			<ul class="site-navigation">
-				<li class="site-navigation__item">Главная</li>
-				<li class="site-navigation__item">Фотографии</li>
-				<li class="site-navigation__item">Конкурс</li>
-				<li class="site-navigation__item">HTML Academy</li>
-			</ul>
-		</nav>
+		<div class="page-header__wrapper">
+			<a class="page-header__logo">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+					<source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+					<img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Pink" width="75" height="22">
+				</picture>
+			</a>
+			<nav class="main-nav">
+				<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть главное меню</span></button>
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a href="index.html">Главная</a></li>
+					<li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+					<li class="main-nav__item"><a>Конкурс</a></li>
+					<li class="main-nav__item"><a href="#">HTML Academy</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 	<main>
@@ -36,15 +40,15 @@
 			<form action="" class="contest__form form">
 				<fieldset class="form__personal-info">
 					<p>
-						<label class="form__label" for="surname">Фамилия:</label>
+						<label class="form__label form__label--red" for="surname">Фамилия:</label>
 						<input class="form__input" type="text" id="surname" placeholder="Укажите фамилию *">
 					</p>
 					<p>
-						<label class="form__label" for="name">Имя:</label>
+						<label class="form__label form__label--red" for="name">Имя:</label>
 						<input class="form__input" type="text" id="name" placeholder="Введите ваше имя *">
 					</p>
 					<p>
-						<label class="form__label" for="middle-name">Отчество:</label>
+						<label class="form__label form__label--red" for="middle-name">Отчество:</label>
 						<input class="form__input" type="text" id="middle-name" placeholder="Ну и отчество тоже">
 					</p>
 				</fieldset>
@@ -52,38 +56,38 @@
 					<legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
 					<p>
 						<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="shark" checked>
-						<label class="form__label" for="shark"><span>Сделал селфи с акулой</span></label>
+						<label class="form__label form__label--blue" for="shark"><span>Сделал селфи с акулой</span></label>
 					</p>
 					<p>
 						<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="beach" checked>
-						<label class="form__label" for="beach"><span>Обгорел на пляже</span></label>
+						<label class="form__label form__label--blue" for="beach"><span>Обгорел на пляже</span></label>
 					</p>
 					<p>
 						<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="chack">
-						<label class="form__label" for="chack"><span>Видел Чака Норриса</span></label>
+						<label class="form__label form__label--blue" for="chack"><span>Видел Чака Норриса</span></label>
 					</p>
 					<p>
 						<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="souvenir">
-						<label class="form__label" for="souvenir"><span>Накупил сувениров</span></label>
+						<label class="form__label form__label--blue" for="souvenir"><span>Накупил сувениров</span></label>
 					</p>
 					<p>
 						<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="tower" checked>
-						<label class="form__label" for="tower"><span>Удержал башню</span></label>
+						<label class="form__label form__label--blue" for="tower"><span>Удержал башню</span></label>
 					</p>
 					<p>
 						<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="hotel">
-						<label class="form__label" for="hotel"><span>Разгромил отель</span></label>
+						<label class="form__label form__label--blue" for="hotel"><span>Разгромил отель</span></label>
 					</p>
 				</fieldset>
 				<fieldset class="form__contacts">
 					<legend class="form__title">Контактная информация</legend>
 					<p>
-						<label class="form__label" for="phone">Номер телефона</label>
+						<label class="form__label form__label--red" for="phone">Номер телефона</label>
 						<input class="form__input" type="text" id="phone" placeholder="Номер, пожалуйста">
 
 					</p>
 					<p>
-						<label class="form__label" for="post">Адрес почты</label>
+						<label class="form__label form__label--red" for="post">Адрес почты</label>
 						<input class="form__input" type="text" id="post" placeholder="Введите почту *">
 					</p>
 				</fieldset>
@@ -91,15 +95,15 @@
 					<legend class="form__title">С каким приложением путешествовали?</legend>
 					<p>
 						<input class="visually-hidden form__radio" type="radio" name="radio" id="ios" checked>
-						<label class="form__label" for="ios">Pink для iOS</label>
+						<label class="form__label form__label--blue" for="ios">Pink для iOS</label>
 					</p>
 					<p>
 						<input class="visually-hidden form__radio" type="radio" name="radio" id="android">
-						<label class="form__label" for="android">Pink на Android</label>
+						<label class="form__label form__label--blue" for="android">Pink на Android</label>
 					</p>
 					<p>
 						<input class="visually-hidden form__radio" type="radio" name="radio" id="windows">
-						<label class="form__label" for="windows">Windows Phone</label>
+						<label class="form__label form__label--blue" for="windows">Windows Phone</label>
 					</p>
 				</fildset>
 				<fieldset class="form__emotions">
@@ -109,7 +113,7 @@
 				<button class="form__button button" type="submit">Отправить форму</button>
 			</form>
 			<small class="contest__legend">
-				<sup>*</sup> — обязательные поля
+				<sup>*</sup> — обязательные <span>для заполнения</span> поля
 			</small>
 		</section>
 	</main>
@@ -117,7 +121,10 @@
 	<footer class="page-footer">
 		<div class="page-footer__logo">
 			<a class="page-footer__logo-link">
-				<img class="page-footer__logo-image" src="" alt="">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+					<img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения Pink" width="145" height="40">
+				</picture>
 			</a>
 		</div>
 		<div class="page-footer__social social">

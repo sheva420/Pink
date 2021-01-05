@@ -13,83 +13,114 @@
 
 <body>
 	<header class="page-header">
-		<a class="page-header__logo">
-			<picture>
-				<img class="page-header__logo-image" src="" alt="">
-			</picture>
-		</a>
-		<nav class="main-nav">
-			<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть главное меню</span></button>
-			<ul class="site-navigation">
-				<li class="site-navigation__item">Главная</li>
-				<li class="site-navigation__item">Фотографии</li>
-				<li class="site-navigation__item">Конкурс</li>
-				<li class="site-navigation__item">HTML Academy</li>
-			</ul>
-		</nav>
+		<div class="page-header__wrapper">
+			<a class="page-header__logo">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+					<source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+					<img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Pink" width="75" height="22">
+				</picture>
+			</a>
+			<nav class="main-nav">
+				<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть главное меню</span></button>
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a href="index.html">Главная</a></li>
+					<li class="main-nav__item"><a>Фотографии</a></li>
+					<li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+					<li class="main-nav__item"><a href="#">HTML Academy</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 	<main>
-		<h1 class="page-title">Фотографии пользователей</h1>
-		<p class="page-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-
 		<section class="photo">
+			<h1 class="photo__title">Фотографии пользователей</h1>
+			<p class="photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 			<ul class="photo__list">
 				<li class="photo__item photo__item--best">
 					<picture class="photo__picture">
-						<img class="photo__image" src="" alt="">
+						<source media="(min-width: 1200px)" srcset="/img/panorama-desktop@1x.jpg 1x, /img/panorama-desktop@2x.jpg 2x">
+						<source media="(min-width: 660px)" srcset="/img/panorama-tablet@1x.jpg 1x, /img/panorama-tablet@2x.jpg 2x">
+						<img class="photo__image" src="/img/panorama-mobile@1x.jpg" srcset="/img/panorama-mobile@2x.jpg 2x" alt="Фотография" width="320" height="137">
 					</picture>
-					<b class="photo__author">Анна <span class="photo__time">(5 минут назад)</span></b>
-					<p class="photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-					<span class="photo__likes">Нравится: 215</span>
+					<div class="photo__item-wrapper">
+						<b class="photo__author">Анна <span class="photo__time">(5 минут назад)</span></b>
+						<p class="photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+						<span class="photo__likes">Нравится: 215</span>
+					</div>
 				</li>
 				<li class="photo__item">
 					<picture class="photo__picture">
-						<img class="photo__image" src="" alt="">
+						<source media="(min-width: 1200px)" srcset="/img/photo-car-desktop@1x.jpg 1x, /img/photo-car-desktop@2x.jpg 2x">
+						<source media="(min-width: 660px)" srcset="/img/photo-car-tablet@1x.jpg 1x, /img/photo-car-tablet@2x.jpg 2x">
+						<img class="photo__image" src="/img/photo-car-mobile@1x.jpg" srcset="/img/photo-car-mobile@2x.jpg 2x" alt="Фотография" width="280" height="180">
 					</picture>
-					<b class="photo__author">Левон <span class="photo__time">(5 часов назад)</span></b>
-					<p class="photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-					<span class="photo__likes">Нравится: 356</span>
+					<div class="photo__item-wrapper">
+						<b class="photo__author">Левон <span class="photo__time">(5 часов назад)</span></b>
+						<p class="photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+						<span class="photo__likes">Нравится: 356</span>
+					</div>
 				</li>
 				<li class="photo__item">
 					<picture class="photo__picture">
-						<img class="photo__image" src="" alt="">
+						<source media="(min-width: 1200px)" srcset="/img/photo-drumset-desktop@1x.jpg 1x, /img/photo-drumset-desktop@2x.jpg 2x">
+						<source media="(min-width: 660px)" srcset="/img/photo-drumset-tablet@1x.jpg 1x, /img/photo-drumset-tablet@2x.jpg 2x">
+						<img class="photo__image" src="/img/photo-drumset-mobile@1x.jpg" srcset="/img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография" width="280" height="180">
 					</picture>
-					<b class="photo__author">Антон <span class="photo__time">(12 часов назад)</span></b>
-					<p class="photo__description">Соседи будут рады!</p>
-					<span class="photo__likes">Нравится: 666</span>
+					<div class="photo__item-wrapper">
+						<b class="photo__author">Антон <span class="photo__time">(12 часов назад)</span></b>
+						<p class="photo__description">Соседи будут рады!</p>
+						<span class="photo__likes">Нравится: 666</span>
+					</div>
 				</li>
 				<li class="photo__item">
 					<picture class="photo__picture">
-						<img class="photo__image" src="" alt="">
+						<source media="(min-width: 1200px)" srcset="/img/photo-window-desktop@1x.jpg 1x, /img/photo-window-desktop@2x.jpg 2x">
+						<source media="(min-width: 660px)" srcset="/img/photo-window-tablet@1x.jpg 1x, /img/photo-window-tablet@2x.jpg 2x">
+						<img class="photo__image" src="/img/photo-window-mobile@1x.jpg" srcset="/img/photo-window-mobile@2x.jpg 2x" alt="Фотография" width="280" height="180">
 					</picture>
-					<b class="photo__author">Борис <span class="photo__time">(20 часов назад)</span></b>
-					<p class="photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-					<span class="photo__likes">Нравится: 215</span>
+					<div class="photo__item-wrapper">
+						<b class="photo__author">Борис <span class="photo__time">(20 часов назад)</span></b>
+						<p class="photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+						<span class="photo__likes">Нравится: 215</span>
+					</div>
 				</li>
 				<li class="photo__item">
 					<picture class="photo__picture">
-						<img class="photo__image" src="" alt="">
+						<source media="(min-width: 1200px)" srcset="/img/photo-fair-desktop@1x.jpg 1x, /img/photo-fair-desktop@2x.jpg 2x">
+						<source media="(min-width: 660px)" srcset="/img/photo-fair-tablet@1x.jpg 1x, /img/photo-fair-tablet@2x.jpg 2x">
+						<img class="photo__image" src="/img/photo-fair-mobile@1x.jpg" srcset="/img/photo-fair-mobile@2x.jpg 2x" alt="Фотография" width="280" height="180">
 					</picture>
-					<b class="photo__author">Сергей <span class="photo__time">(25 часов назад)</span></b>
-					<p class="photo__description">Самая кубанская в мире!</p>
-					<span class="photo__likes">Нравится: 4</span>
+					<div class="photo__item-wrapper">
+						<b class="photo__author">Сергей <span class="photo__time">(25 часов назад)</span></b>
+						<p class="photo__description">Самая кубанская в мире!</p>
+						<span class="photo__likes">Нравится: 4</span>
+					</div>
 				</li>
 				<li class="photo__item">
 					<picture class="photo__picture">
-						<img class="photo__image" src="" alt="">
+						<source media="(min-width: 1200px)" srcset="/img/photo-pov-desktop@1x.jpg 1x, /img/photo-pov-desktop@2x.jpg 2x">
+						<source media="(min-width: 660px)" srcset="/img/photo-pov-tablet@1x.jpg 1x, /img/photo-pov-tablet@2x.jpg 2x">
+						<img class="photo__image" src="/img/photo-pov-mobile@1x.jpg" srcset="/img/photo-pov-mobile@2x.jpg 2x" alt="Фотография" width="280" height="180">
 					</picture>
-					<b class="photo__author">Максим <span class="photo__time">(40 часов назад)</span></b>
-					<p class="photo__description">Где снег-то?</p>
-					<span class="photo__likes">Нравится: 150</span>
+					<div class="photo__item-wrapper">
+						<b class="photo__author">Максим <span class="photo__time">(40 часов назад)</span></b>
+						<p class="photo__description">Где снег-то?</p>
+						<span class="photo__likes">Нравится: 150</span>
+					</div>
 				</li>
 				<li class="photo__item">
 					<picture class="photo__picture">
-						<img class="photo__image" src="" alt="">
+						<source media="(min-width: 1200px)" srcset="/img/photo-wing-desktop@1x.jpg 1x, /img/photo-wing-desktop@2x.jpg 2x">
+						<source media="(min-width: 660px)" srcset="/img/photo-wing-tablet@1x.jpg 1x, /img/photo-wing-tablet@2x.jpg 2x">
+						<img class="photo__image" src="/img/photo-wing-mobile@1x.jpg" srcset="/img/photo-wing-mobile@2x.jpg 2x" alt="Фотография" width="280" height="180">
 					</picture>
-					<b class="photo__author">Надежда <span class="photo__time">(45 часов назад)</span></b>
-					<p class="photo__description">Всем GM и взаимные лайки!</p>
-					<span class="photo__likes">Нравится: 2560</span>
+					<div class="photo__item-wrapper">
+						<b class="photo__author">Надежда <span class="photo__time">(45 часов назад)</span></b>
+						<p class="photo__description">Всем GM и взаимные лайки!</p>
+						<span class="photo__likes">Нравится: 2560</span>
+					</div>
 				</li>
 			</ul>
 			<p class="photo__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
@@ -97,7 +128,9 @@
 
 		<section class="editor">
 			<picture class="editor__picture">
-				<img class="editor__image" src="" alt="">
+				<source media="(min-width: 1200px)" srcset="/img/photo-road-desctop@1x.jpg 1x, /img/photo-road-desctop@2x.jpg 2x">
+				<source media="(min-width: 660px)" srcset="/img/photo-road-tablet@1x.jpg 1x, /img/photo-road-tablet@2x.jpg 2x">
+				<img class="editor__image" src="/img/photo-road-mobile@1x.jpg" srcset="/img/photo-road-mobile@2x.jpg 2x" alt="Изображение в редакторе" width="280" height="374">
 			</picture>
 			<ul class="editor__tools-list">
 				<li class="editor__item">
@@ -123,11 +156,14 @@
 			<button class="editor__button editor__button--cancel button" type="button">Отмена</button>
 		</section>
 	</main>
-	
+
 	<footer class="page-footer">
 		<div class="page-footer__logo">
 			<a class="page-footer__logo-link">
-				<img class="page-footer__logo-image" src="" alt="">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+					<img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения Pink" width="145" height="40">
+				</picture>
 			</a>
 		</div>
 		<div class="page-footer__social social">

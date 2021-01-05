@@ -1,0 +1,44 @@
+.form__title {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: @red-color;
+}
+
+.form__label {
+	line-height: 30px;
+}
+
+.form__label--red {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: @red-color;
+}
+
+.form__label--blue {
+	font-size: 18px;
+	color: @main-color;
+}
+
+.form__input {
+	font-size: 18px;
+	line-height: 30px;
+	color: @main-color;
+
+	&::placeholder {
+		font-size: 18px;
+		line-height: 30px;
+		color: @main-color;
+	}
+}
+
+.form__button {
+	line-height: 30px;
+	background-color: #2aab6d;
+}
+
+@media (min-width: @tablet-width) {
+	.form__title {
+		line-height: 30px;
+	}
+}

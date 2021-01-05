@@ -1,0 +1,61 @@
+.photo__title {
+	font-family: "OpenSansLight";
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 33px;
+//	color: #ffffff;
+}
+
+.photo__text {
+	font-size: 14px;
+	line-height: 30px;
+	color: @main-color;
+}
+
+.photo__list {
+	.list-reset;
+}
+
+.photo__item-wrapper {
+	background-color: #f2f2f2;
+}
+
+.photo__author {
+	font-family: "OpenSansBold";
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	color: @main-color;
+}
+
+.photo__time {
+	font-family: "OpenSansLight";
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.photo__description {
+	font-size: 14px;
+	line-height: 24px;
+	color: @main-color;
+}
+
+.photo__likes {
+	font-size: 12px;
+	line-height: 24px;
+	color: @red-color;
+	text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+	.photo__title {
+		font-size: 50px;
+		line-height: 68px;
+	}
+	
+	.photo__text {
+		font-size: 18px;
+	}
+}
