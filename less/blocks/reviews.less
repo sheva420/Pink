@@ -1,9 +1,38 @@
+.reviews {
+	position: relative;
+	
+	padding-top: 45px;
+	padding-bottom: 85px;
+}
+
+.reviews__wrapper {
+	width: 88%;
+	margin: 0 auto;
+}
+
+.reviews__item {
+	.mp-reset;
+	
+	text-align: center;
+}
+
+.reviews__item--2,
+.reviews__item--3 {
+	display: none;
+}
+
 .reviews__author-name {
+	.mp-reset;
+	
 	font-family: "OpenSansBold";
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 30px;
 	font-style: normal;
+	
+	& span {
+		display: none;
+	}
 }
 
 .reviews__author-name span {
@@ -15,9 +44,21 @@
 }
 
 .reviews__text {
+	.mp-reset;
+	
 	font-size: 14px;
 	line-height: 30px;
 	color: @main-color;
+}
+
+.reviews__toggles{
+	position: absolute;
+	bottom: 42px;
+	left: 50%;
+	
+	.mp-reset;
+	
+	transform: translateX(-50%);
 }
 
 @media (min-width: @tablet-width) {

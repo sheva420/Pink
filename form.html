@@ -13,7 +13,7 @@
 
 <body>
 	<header class="page-header">
-		<div class="page-header__wrapper">
+		<nav class="main-nav main-nav--closed main-nav--nojs">
 			<a class="page-header__logo">
 				<picture>
 					<source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
@@ -21,16 +21,14 @@
 					<img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения Pink" width="75" height="22">
 				</picture>
 			</a>
-			<nav class="main-nav">
-				<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть главное меню</span></button>
-				<ul class="main-nav__list">
-					<li class="main-nav__item"><a href="index.html">Главная</a></li>
-					<li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-					<li class="main-nav__item"><a>Конкурс</a></li>
-					<li class="main-nav__item"><a href="#">HTML Academy</a></li>
-				</ul>
-			</nav>
-		</div>
+			<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть главное меню</span></button>
+			<ul class="main-nav__list">
+				<li class="main-nav__item"><a href="index.html">Главная</a></li>
+				<li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+				<li class="main-nav__item"><a>Конкурс</a></li>
+				<li class="main-nav__item"><a href="#">HTML Academy</a></li>
+			</ul>
+		</nav>
 	</header>
 
 	<main>
@@ -140,6 +138,23 @@
 		</div>
 	</footer>
 
+	<script>
+		var navMain = document.querySelector(".main-nav");
+		var navToggle = document.querySelector(".main-nav__toggle");
+
+		navMain.classList.remove("main-nav--nojs");
+
+		navToggle.addEventListener("click", function() {
+			if (navMain.classList.contains("main-nav--closed")) {
+				navMain.classList.remove("main-nav--closed");
+				navMain.classList.add("main-nav--opened");
+			} else {
+				navMain.classList.add("main-nav--closed");
+				navMain.classList.remove("main-nav--opened");
+			}
+		});
+
+	</script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 body {
+  width: 100%;
   min-width: 320px;
   margin: 0;
   padding: 0;
@@ -73,9 +74,10 @@ img {
 @media (max-width: 320px) {
   .page-header::before {
     background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-size: auto;
   }
 }
-.page-header::after {
+.page-header--main::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -227,25 +229,69 @@ img {
   font-size: 18px;
   line-height: 18px;
 }
+.slider__toggles {
+  margin: 0;
+  padding: 0;
+  width: 62px;
+  display: flex;
+  justify-content: space-between;
+}
+.slider__toggle {
+  margin: 0;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  display: block;
+  font-size: 0px;
+  background-color: #bec2c7;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+.slider__toggle--active {
+  background-color: #ffffff;
+  border-color: #283645;
+}
 .intro {
+  width: auto;
+  padding: 28px 0px 31px;
   background-color: #1d2631;
 }
+.intro__wrapper {
+  width: 88%;
+  margin: 0 auto;
+}
 .intro__slogan {
+  display: none;
   font-family: "OpenSansLight";
   font-size: 40px;
   line-height: 48px;
   font-weight: lighter;
   color: #ffffff;
 }
+.intro__download-link {
+  padding: 15px 0 16px;
+  text-align: center;
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+}
 .intro__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding: 0 14%;
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .intro__text {
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
   font-family: "OpenSansLight";
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
   color: #ffffff;
 }
 @media (min-width: 1200px) {
@@ -260,23 +306,78 @@ img {
     font-size: 18px;
   }
 }
+.information {
+  width: auto;
+}
+.information__wrapper {
+  width: 88%;
+  margin: 0 auto;
+  padding-top: 44px;
+}
 .information__text {
+  margin: 0;
+  padding: 0;
+  padding: 0 13%;
+  margin-bottom: 35px;
   font-family: "OpenSansLight";
   font-size: 24px;
   line-height: 29px;
+  text-align: center;
   color: #283645;
 }
+.information__list-wrapper {
+  position: relative;
+  background-color: #f2f2f2;
+}
+.information__list-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-color: transparent transparent transparent #ffffff;
+  border-style: solid;
+  border-width: 0px 0px 32px 100vw;
+}
 .information__list {
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 88%;
+  margin: 0 auto;
+  padding-top: 85px;
+  padding-bottom: 317px;
+  text-align: center;
+}
+.information__list::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 330px;
+  background-image: url(../img/iphone-screen-mobile@1x.png);
+  background-position: center 53px;
+  background-repeat: no-repeat;
+}
+.information__item {
+  margin-bottom: 42px;
+}
+.information__item:last-child {
+  margin-bottom: 0;
 }
 .information__item-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 14px;
   font-family: "OpenSansBold";
   font-size: 18px;
   line-height: 24px;
 }
 .information__item-text {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
@@ -300,6 +401,9 @@ img {
     font-size: 18px;
     line-height: 30px;
   }
+}
+.effect {
+  display: none;
 }
 .effect__title {
   font-family: "OpenSansBold";
@@ -335,12 +439,35 @@ img {
     line-height: 30px;
   }
 }
+.reviews {
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 85px;
+}
+.reviews__wrapper {
+  width: 88%;
+  margin: 0 auto;
+}
+.reviews__item {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.reviews__item--2,
+.reviews__item--3 {
+  display: none;
+}
 .reviews__author-name {
+  margin: 0;
+  padding: 0;
   font-family: "OpenSansBold";
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
+}
+.reviews__author-name span {
+  display: none;
 }
 .reviews__author-name span {
   font-family: "OpenSans";
@@ -350,9 +477,19 @@ img {
   color: #283645;
 }
 .reviews__text {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+}
+.reviews__toggles {
+  position: absolute;
+  bottom: 42px;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translateX(-50%);
 }
 @media (min-width: 660px) {
   .reviews__author-name {
@@ -369,6 +506,9 @@ img {
   .reviews__author-name span {
     font-size: 18px;
   }
+}
+.prices {
+  display: none;
 }
 .prices__head td {
   background-color: #283645;

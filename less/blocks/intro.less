@@ -1,8 +1,18 @@
 .intro {
+	width: auto;
+	padding: 28px 0px 31px;
+
 	background-color: #1d2631;
 }
 
+.intro__wrapper {
+	width: 88%;
+	margin: 0 auto;
+}
+
 .intro__slogan {
+	display: none;
+
 	font-family: "OpenSansLight";
 	font-size: 40px;
 	line-height: 48px;
@@ -10,14 +20,33 @@
 	color: #ffffff;
 }
 
+.intro__download-link {
+	padding: 15px 0 16px;
+
+	text-align: center;
+
+	border: 3px solid #ffffff;
+	border-radius: 50px;
+}
+
 .intro__list {
 	.list-reset;
+	
+	padding: 0 14%;
+	margin-top: 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .intro__text {
+	.mp-reset;
+	margin-top: 24px;
+	
 	font-family: "OpenSansLight";
 	font-size: 14px;
 	line-height: 24px;
+	text-align: center;
 	color: #ffffff;
 }
 
@@ -26,11 +55,11 @@
 		font-size: 50px;
 		line-height: 68px;
 	}
-	
+
 	.intro__download-link {
 		font-size: 21px;
 	}
-	
+
 	.intro__text {
 		font-size: 18px;
 	}
