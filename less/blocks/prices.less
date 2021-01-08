@@ -1,13 +1,46 @@
 .prices {
 	position: relative;
 	
+	padding-top: 90px;
 	padding-bottom: 100px;
 	
 	background-color: #f2f2f2;
+	
+	&::before {
+		content: '';
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+
+		border-color: transparent transparent transparent #ffffff;
+		border-style: solid;
+		border-width: 0px 0px 32px 100vw;
+	}
+}
+
+.prices__wrapper {
+	width: 280px;
+	margin: 0 auto;
 }
 
 .prices__table {
+	overflow: hidden;
 	border-collapse: collapse;
+}
+
+.prices__table--start {
+	transform: translateX(0px);
+}
+
+.prices__table--center {
+	transform: translateX(-280px);
+}
+
+.prices__table--end {
+	transform: translateX(-560px);
 }
 
 .prices__table tr {

@@ -33,10 +33,6 @@ img {
   text-decoration: none;
   color: #ffffff;
 }
-.title-style {
-  margin: 0;
-  padding: 0;
-}
 .mp-reset {
   margin: 0;
   padding: 0;
@@ -208,21 +204,78 @@ img {
     text-transform: none;
   }
 }
+.page-footer {
+  padding: 40px 0;
+}
+.page-footer__logo {
+  width: 145px;
+  margin: 0 auto;
+}
+.copyright {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .copyright__text {
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
   color: #283645;
 }
+.copyright__link {
+  display: block;
+  width: 27px;
+  height: 34px;
+  margin-left: 15px;
+  background-image: url(../img/logo-htmlacademy.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
 @media (min-width: 1200px) {
   .copyright__text {
     font-size: 18px;
   }
 }
+.social {
+  margin-top: 35px;
+}
 .social__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.social__item {
+  margin-right: 8px;
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+.social__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  font-size: 0px;
+}
+.social__link--twitter {
+  background-image: url(../img/icon-twitter.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.social__link--facebook {
+  background-image: url(../img/icon-facebook.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.social__link--youtube {
+  background-image: url(../img/icon-youtube.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .button {
   text-decoration: none;
@@ -512,11 +565,36 @@ img {
 }
 .prices {
   position: relative;
+  padding-top: 90px;
   padding-bottom: 100px;
   background-color: #f2f2f2;
 }
+.prices::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-color: transparent transparent transparent #ffffff;
+  border-style: solid;
+  border-width: 0px 0px 32px 100vw;
+}
+.prices__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
 .prices__table {
+  overflow: hidden;
   border-collapse: collapse;
+}
+.prices__table--start {
+  transform: translateX(0px);
+}
+.prices__table--center {
+  transform: translateX(-280px);
+}
+.prices__table--end {
+  transform: translateX(-560px);
 }
 .prices__table tr {
   display: flex;
@@ -638,11 +716,22 @@ td.prices__hit {
     font-size: 18px;
   }
 }
+.contacts {
+  padding-top: 45px;
+}
+.contacts__wrapper {
+  width: 88%;
+  margin: 0 auto;
+}
 .contacts__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 39px;
   font-family: "OpenSansLight";
   font-weight: lighter;
   font-size: 24px;
   line-height: 29px;
+  text-align: center;
   color: #283645;
 }
 .contacts__list {
@@ -650,20 +739,30 @@ td.prices__hit {
   margin: 0;
   padding: 0;
 }
+.contacts__item {
+  margin-bottom: 23px;
+}
+.contacts__item:last-child {
+  margin-bottom: 38px;
+}
 .contacts__item-title {
+  display: block;
   font-family: "OpenSansBold";
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
+  text-align: center;
   color: #283645;
 }
 .contacts__text {
+  display: block;
   font-family: "OpenSansLight";
   font-weight: lighter;
   font-size: 24px;
   line-height: 33px;
-  color: #d22856;
+  text-align: center;
   text-decoration: none;
+  color: #d22856;
 }
 @media (min-width: 660px) {
   .contacts__title {
@@ -676,6 +775,38 @@ td.prices__hit {
     font-size: 50px;
     line-height: 68px;
   }
+}
+.map {
+  position: relative;
+}
+.map::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-style: solid;
+  border-width: 32px 50vw 0 50vw;
+  border-color: #ffffff transparent transparent transparent;
+}
+.map::after {
+  content: '';
+  position: absolute;
+  top: 94px;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #d22856;
+  border-radius: 50%;
+  border: 10px solid #ffffff;
+  transform: translateX(-50%);
+}
+.map__wrapper {
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/bg-map-tablet@1x.jpg);
+  background-position: center -445px;
+  background-repeat: no-repeat;
 }
 .photo__title {
   font-family: "OpenSansLight";

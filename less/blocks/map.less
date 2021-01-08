@@ -1,0 +1,41 @@
+.map {
+	position: relative;
+
+	&::before {
+		content: '';
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		border-style: solid;
+		border-width: 32px 50vw 0 50vw;
+		border-color: #ffffff transparent transparent transparent;
+	}
+	
+	&::after {
+		content: '';
+		
+		position: absolute;
+		top: 94px;
+		left: 50%;
+		
+		width: 16px;
+		height: 16px;
+		
+		background-color: @red-color;
+		border-radius: 50%;
+		border: 10px solid #ffffff;
+		
+		transform: translateX(-50%);
+	}
+}
+
+.map__wrapper {
+	height: 200px;
+	.mp-reset;
+
+	background-image: url(../img/bg-map-tablet@1x.jpg);
+	background-position: center -445px;
+	background-repeat: no-repeat;
+}
