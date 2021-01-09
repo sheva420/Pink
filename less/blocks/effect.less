@@ -3,6 +3,8 @@
 }
 
 .effect__title {
+	.mp-reset;
+	
 	font-family: "OpenSansBold";
 	font-size: 30px;
 	line-height: 36px;
@@ -10,6 +12,8 @@
 }
 
 .effect__text {
+	.mp-reset;
+	
 	font-family: "OpenSansLight";
 	font-size: 14px;
 	line-height: 24px;
@@ -22,6 +26,68 @@
 	line-height: 24px;
 	font-weight: 400;
 	color: @red-color;
+}
+
+@media (min-width: @tablet-width) {
+	.effect {
+		display: block;
+	}
+	
+	.effect__wrapper {
+		position: relative;
+		
+		width: calc(94% - 310px);
+		margin: 0 auto;
+		padding-left: 310px;
+		padding-top: 40px;
+		padding-bottom: 23px;
+		
+		&::before {
+			content: '';
+			
+			position: absolute;
+			top: 0;
+			left: 0;
+			
+			width: 238px;
+			height: 276px;
+			
+			background-image: url(../img/icon-timer.svg);
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			opacity: 0.1;
+		}
+		
+		&::after {
+			content: '24';
+			
+			position: absolute;
+			top: 55px;
+			left: 19px;
+			
+			width: 176px;
+			height: 176px;
+			
+			font-family: "OpenSansBold";
+			font-weight: 700;
+			font-size: 96px;
+			line-height: 160px;
+			text-align: center;
+			color: @red-color;
+			
+			border: 13px solid @red-color;
+			border-radius: 50%;
+			background-color: #ffffff;
+		}
+	}
+	
+	.effect__title {
+		margin-bottom: 10px;
+	}
+	
+	.effect__text {
+		margin-bottom: 11px;
+	}
 }
 
 @media (min-width: @desktop-width) {

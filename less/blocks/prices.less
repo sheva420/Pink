@@ -191,6 +191,88 @@ td.prices__hit {
 	transform: translateX(-50%);
 }
 
+@media (min-width: @tablet-width) {
+	.prices {
+		
+		&::before {
+			border-bottom-width: 50px;
+		}
+	}
+	
+	.prices__wrapper {
+		width: 94%;
+	}
+	
+	.prices__table {
+//		width: 100%;
+		width: 620px;
+		margin: 0 auto;
+	}
+	
+	.prices__table--center {
+		transform: none;
+	}
+	
+	.prices__head td {
+		
+		&:first-child {
+			border-left: none;
+		}
+	}
+	
+	.prices__table td {
+		width: 25%;
+		min-height: 45px;
+		padding: 0;
+		
+		&:first-child {
+			display: block;
+		}
+	}
+	
+	span.prices__feature {
+		display: none;
+	}
+	
+	td.prices__feature {
+		width: calc(25% - 15px);
+		min-height: 37px;
+		padding-left: 15px;
+		padding-top: 8px;
+		text-transform: none;
+	}
+	
+	.prices__yes {
+		
+		&::before {
+			top: 27px;
+			right: 76px;
+		}
+		
+		&::after {
+			top: 21px;
+			right: 54px;
+		}
+	}
+	
+	.prices__no {
+		
+		&::before {
+			top: 20px;
+			right: 58px;
+		}
+		
+		&::after {
+			top: 20px;
+			right: 58px;
+		}
+	}
+	
+	.prices__toggles {
+		display: none;
+	}
+}
+
 @media (min-width: @desktop-width) {
 	.prices__rate {
 		font-size: 18px;

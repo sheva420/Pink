@@ -445,6 +445,9 @@ img {
   text-align: center;
   color: #283645;
 }
+.information__text br {
+  display: none;
+}
 .information__list-wrapper {
   position: relative;
   background-color: #f2f2f2;
@@ -503,9 +506,43 @@ img {
   color: #283645;
 }
 @media (min-width: 660px) {
+  .information {
+    margin-bottom: 60px;
+  }
+  .information__wrapper {
+    width: 94%;
+    margin-bottom: 48px;
+  }
   .information__text {
+    padding: 0;
+    margin-bottom: 0;
     font-size: 40px;
     line-height: 54px;
+  }
+  .information__text br {
+    display: inline;
+  }
+  .information__list-wrapper::before {
+    border-bottom-width: 50px;
+  }
+  .information__list {
+    width: calc(94% - 310px);
+    padding-top: 75px;
+    padding-left: 310px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  .information__list::after {
+    height: 481px;
+    background-image: url(../img/iphone-screen-3-tablet@1x.png);
+    background-position: 0 0;
+  }
+  .information__item {
+    min-height: 110px;
+    margin-bottom: 38px;
+  }
+  .information__item-title {
+    margin-bottom: 12px;
   }
 }
 @media (min-width: 1200px) {
@@ -526,12 +563,16 @@ img {
   display: none;
 }
 .effect__title {
+  margin: 0;
+  padding: 0;
   font-family: "OpenSansBold";
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
 }
 .effect__text {
+  margin: 0;
+  padding: 0;
   font-family: "OpenSansLight";
   font-size: 14px;
   line-height: 24px;
@@ -543,6 +584,54 @@ img {
   line-height: 24px;
   font-weight: 400;
   color: #d22856;
+}
+@media (min-width: 660px) {
+  .effect {
+    display: block;
+  }
+  .effect__wrapper {
+    position: relative;
+    width: calc(94% - 310px);
+    margin: 0 auto;
+    padding-left: 310px;
+    padding-top: 40px;
+    padding-bottom: 23px;
+  }
+  .effect__wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 238px;
+    height: 276px;
+    background-image: url(../img/icon-timer.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+  }
+  .effect__wrapper::after {
+    content: '24';
+    position: absolute;
+    top: 55px;
+    left: 19px;
+    width: 176px;
+    height: 176px;
+    font-family: "OpenSansBold";
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 160px;
+    text-align: center;
+    color: #d22856;
+    border: 13px solid #d22856;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+  .effect__title {
+    margin-bottom: 10px;
+  }
+  .effect__text {
+    margin-bottom: 11px;
+  }
 }
 @media (min-width: 1200px) {
   .effect__title {
@@ -612,11 +701,35 @@ img {
   transform: translateX(-50%);
 }
 @media (min-width: 660px) {
+  .reviews {
+    padding-top: 100px;
+    padding-bottom: 68px;
+  }
+  .reviews__wrapper {
+    width: 94%;
+  }
+  .reviews__item {
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews__item--2,
+  .reviews__item--3 {
+    display: none;
+  }
   .reviews__author-name {
+    order: 2;
     font-size: 20px;
   }
+  .reviews__author-name span {
+    display: block;
+  }
   .reviews__text {
+    margin-bottom: 33px;
     font-size: 18px;
+  }
+  .reviews__toggles {
+    bottom: 20px;
   }
 }
 @media (min-width: 1200px) {
@@ -767,6 +880,61 @@ td.prices__hit {
   margin: 0;
   padding: 0;
   transform: translateX(-50%);
+}
+@media (min-width: 660px) {
+  .prices::before {
+    border-bottom-width: 50px;
+  }
+  .prices__wrapper {
+    width: 94%;
+  }
+  .prices__table {
+    width: 620px;
+    margin: 0 auto;
+  }
+  .prices__table--center {
+    transform: none;
+  }
+  .prices__head td:first-child {
+    border-left: none;
+  }
+  .prices__table td {
+    width: 25%;
+    min-height: 45px;
+    padding: 0;
+  }
+  .prices__table td:first-child {
+    display: block;
+  }
+  span.prices__feature {
+    display: none;
+  }
+  td.prices__feature {
+    width: calc(25% - 15px);
+    min-height: 37px;
+    padding-left: 15px;
+    padding-top: 8px;
+    text-transform: none;
+  }
+  .prices__yes::before {
+    top: 27px;
+    right: 76px;
+  }
+  .prices__yes::after {
+    top: 21px;
+    right: 54px;
+  }
+  .prices__no::before {
+    top: 20px;
+    right: 58px;
+  }
+  .prices__no::after {
+    top: 20px;
+    right: 58px;
+  }
+  .prices__toggles {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   .prices__rate {
