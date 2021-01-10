@@ -78,7 +78,7 @@
 			
 			border: 13px solid @red-color;
 			border-radius: 50%;
-			background-color: #ffffff;
+			background-color: transparent;
 		}
 	}
 	
@@ -92,11 +92,48 @@
 }
 
 @media (min-width: @desktop-width) {
+	.effect {
+		padding-top: 30px;
+		padding-bottom: 75px;
+		
+		background-color: #f2f2f2;
+	}
+	
+	.effect__wrapper {
+		padding-top: 97px;
+		padding-left: 370px;
+		
+		&::before {
+			width: 298px;
+			height: 345px;
+		}
+		
+		&::after {
+			width: 221px;
+			height: 221px;
+			
+			top: 69px;
+			left: 22px;
+			
+			font-size: 120px;
+			line-height: 205px;
+			
+			border-width: 16px;
+		}
+	}
 	.effect__title {
+		margin-bottom: 24px;
+		
 		line-height: 30px;
+		
+		& br {
+			display: none;
+		}
 	}
 	
 	.effect__text {
+		margin-bottom: 32px;
+		
 		font-family: "OpenSans";
 		font-size: 18px;
 		line-height: 30px;
