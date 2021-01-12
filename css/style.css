@@ -424,6 +424,7 @@ img {
     padding-bottom: 103px;
     padding-top: 18px;
     background-image: url(../img/iphone-hand-tablet@1x.png);
+    background-repeat: no-repeat;
     background-color: transparent;
   }
   .intro::before {
