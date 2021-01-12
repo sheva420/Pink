@@ -62,16 +62,20 @@
 	transform: translateX(-50%);
 }
 
+.reviews__button {
+	display: none;
+}
+
 @media (min-width: @tablet-width) {
 	.reviews {
 		padding-top: 100px;
 		padding-bottom: 68px;
 	}
-	
+
 	.reviews__wrapper {
 		width: 94%;
 	}
-	
+
 	.reviews__item {
 		min-height: 90px;
 		display: flex;
@@ -86,7 +90,7 @@
 	.reviews__author-name {
 		order: 2;
 		font-size: 20px;
-		
+
 		& span {
 			display: block;
 		}
@@ -94,16 +98,51 @@
 
 	.reviews__text {
 		margin-bottom: 33px;
-		
+
 		font-size: 18px;
 	}
-	
+
 	.reviews__toggles {
 		bottom: 20px;
 	}
 }
 
 @media (min-width: @desktop-width) {
+	.reviews {
+		position: relative;
+		
+		padding-top: 188px;
+		padding-bottom: 43px;
+
+		&::before {
+			content: '';
+			
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			
+			width: 100%;
+			height: 100%;
+			
+			background-image: url(../img/icon-quotes.svg);
+			background-position: center 72px;
+			background-repeat: no-repeat;
+			opacity: 0.1;
+		}
+	}
+	
+	.reviews__wrapper {
+		position: relative;
+	}
+	
+	.reviews__item {
+		width: 745px;
+		margin: 0 auto;
+		
+		text-align: center;
+	}
+
 	.reviews__author-name {
 		font-size: 24px;
 	}
@@ -111,4 +150,67 @@
 	.reviews__author-name span {
 		font-size: 18px;
 	}
+	
+	.reviews__toggles {
+		display: none;
+	}
+
+	.reviews__button {
+		position: absolute;
+		
+		top: 19px;
+		
+		display: block;
+		width: 22px;
+		height: 41px;
+		
+		background: none;
+		border: none;
+		
+		&::before {
+			content: '';
+			
+			position: absolute;
+			top: 0;
+			left: 0;
+			
+			width: 30px;
+			height: 3px;
+			
+			background-color: #bec2c7;
+			transform: rotate(-45deg);
+		}
+		
+		&::after {
+			content: '';
+			
+			position: absolute;
+			top: 20px;
+			left: 0;
+			
+			width: 30px;
+			height: 3px;
+			
+			background-color: #bec2c7;
+			transform: rotate(45deg);
+		}
+	}
+	
+	.reviews__prev {
+		left: 0;
+	}
+	
+	.reviews__next {
+		right: 0;
+		
+		&::before {
+			transform: rotate(45deg);
+		}
+		
+		&::after {
+			transform: rotate(-45deg);
+		}
+	}
+	
+	
 }

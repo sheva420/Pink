@@ -58,3 +58,23 @@
 		background-position: center -347px;
 	}
 }
+
+@media (min-width: @desktop-width) {
+	.map {
+		
+		&::before {
+			border-top-width: 103px;
+		}
+		
+		&::after {
+			top: 265px;
+		}
+	}
+	
+	.map__wrapper {
+		height: 503px;
+		
+		background-position: center -400px;
+		background-size: 100% 1200px, cover;
+	}
+}
