@@ -1402,20 +1402,51 @@ img {
   text-align: center;
   color: #283645;
 }
-.photo__item:not(.photo__item--best) {
+.photo__item {
   width: 88%;
   margin: 0 auto;
+  margin-bottom: 20px;
+}
+.photo__item:last-child {
+  margin-bottom: 40px;
+}
+.photo__item--best {
+  position: relative;
+  width: auto;
+}
+.photo__item--best::after {
+  content: 'панорама дня';
+  position: absolute;
+  top: 0;
+  right: 6%;
+  width: 140px;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: #d22856;
 }
 .photo__item--best .photo__item-wrapper {
-  width: 88%;
+  width: calc(88% - 36px);
   margin: 0 auto;
 }
-.photo__item--best .photo-image {
+.photo__item--best .photo__image {
   width: 100%;
 }
 .photo__picture {
+  width: 100%;
   margin: 0;
   padding: 0;
+  display: block;
+  background-color: #f2f2f2;
+}
+.photo__image {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 .photo__list {
   list-style-type: none;
@@ -1423,9 +1454,11 @@ img {
   padding: 0;
 }
 .photo__item-wrapper {
+  padding: 20px 18px 26px;
   background-color: #f2f2f2;
 }
 .photo__author {
+  margin-bottom: 4px;
   font-family: "OpenSansBold";
   font-weight: 700;
   font-size: 14px;
@@ -1440,15 +1473,32 @@ img {
   text-transform: uppercase;
 }
 .photo__description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
 }
 .photo__likes {
+  position: relative;
+  display: block;
+  padding-left: 32px;
   font-size: 12px;
   line-height: 24px;
   color: #d22856;
   text-transform: uppercase;
+}
+.photo__likes::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 13px;
+  height: 12px;
+  background-image: url(../img/icon-heart.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 @media (min-width: 660px) {
   .photo__title {
@@ -1459,11 +1509,121 @@ img {
     font-size: 18px;
   }
 }
+.editor {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #f2f2f2;
+}
+.editor::after {
+  content: '';
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #283645;
+  opacity: 0.1;
+}
+.editor__wrapper {
+  width: 88%;
+  margin: 0 auto;
+}
+.editor__picture {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  width: 100%;
+  display: block;
+  line-height: 0;
+}
+.editor__image {
+  width: 100%;
+}
+.editor__tools-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding: 0 13px;
+  width: calc(100% - 26px);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.editor__item {
+  width: 33%;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+.editor__tool {
+  margin: 0;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  opacity: 0.3;
+  background-color: transparent;
+}
+.editor__tool--active {
+  opacity: 1;
+}
+.editor__tool--active svg {
+  fill: #d22856;
+}
+.editor__range-wrapper {
+  width: 86%;
+  margin: 0 auto;
+  margin-bottom: 73px;
+}
+.editor__range {
+  position: relative;
+  display: none;
+}
+.editor__range--active {
+  display: flex;
+  align-items: center;
+}
+.editor__bar {
+  width: 100%;
+  height: 2px;
+  background-color: #283645;
+}
+.editor__toggle {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #f2f2f2;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.editor__range--cut .editor__toggle {
+  right: 14%;
+}
+.editor__button {
+  width: 100%;
+  padding: 15px 0 17px;
+  margin-bottom: 12px;
+  border: 3px solid;
+  border-radius: 50px;
+  background-color: transparent;
+}
+.editor__button:last-child {
+  margin-bottom: 0;
+}
 .editor__button--post {
   color: #d22856;
+  border-color: #d22856;
 }
 .editor__button--cancel {
   color: #283645;
+  border-color: #283645;
   opacity: 0.1;
 }
 .contest__title {
