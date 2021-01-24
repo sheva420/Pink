@@ -4,18 +4,18 @@
 	padding-bottom: 40px;
 
 	background-color: #f2f2f2;
-	
-	
+
+
 	&::after {
 		content: '';
-		
+
 		position: absolute;
 		bottom: 200px;
 		left: 0;
-		
+
 		width: 100%;
 		height: 1px;
-		
+
 		background-color: @main-color;
 		opacity: 0.1;
 	}
@@ -85,7 +85,7 @@
 
 .editor__range {
 	position: relative;
-	
+
 	display: none;
 }
 
@@ -97,7 +97,7 @@
 .editor__bar {
 	width: 100%;
 	height: 2px;
-	
+
 	background-color: @main-color;
 }
 
@@ -105,10 +105,10 @@
 	position: absolute;
 	top: 50%;
 	right: 0;
-	
+
 	width: 10px;
 	height: 10px;
-	
+
 	background-color: #f2f2f2;
 	border: 2px solid @red-color;
 	border-radius: 50%;
@@ -123,11 +123,11 @@
 	width: 100%;
 	padding: 15px 0 17px;
 	margin-bottom: 12px;
-	
+
 	border: 3px solid;
 	border-radius: 50px;
 	background-color: transparent;
-	
+
 	&:last-child {
 		margin-bottom: 0;
 	}
@@ -142,4 +142,117 @@
 	color: @main-color;
 	border-color: @main-color;
 	opacity: 0.1;
+}
+
+
+@media (min-width: @tablet-width) {
+	.editor {
+		padding-top: 57px;
+		
+		&::after {
+			content: none;
+		}
+	}
+
+	.editor__wrapper {
+		width: 94%;
+
+		display: flex;
+	}
+
+	.editor__picture {
+		width: 48%;
+		margin-bottom: 0;
+	}
+
+	.editor__tools-wrapper {
+		width: 48%;
+		margin-left: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.editor__tools-range-wrapper {
+		display: flex;
+	}
+
+	.editor__tools-list {
+		width: 24px;
+		padding: 0;
+		padding-top: 9px;
+		flex-direction: column;
+	}
+
+	.editor__item {
+		margin-bottom: 50px;
+	}
+
+	.editor__tool {
+		width: 24px;
+		height: 24px;
+
+		&--contrast {
+			width: 16px;
+			height: 16px;
+		}
+	}
+
+	.editor__range-wrapper {
+		width: 73%;
+		
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 0;
+		padding-top: 9px;
+	}
+
+	.editor__range {
+		position: relative;
+		
+		height: 24px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 50px;
+
+		&--blur {
+			margin-bottom: 46px;
+			
+			& .editor__toggle {
+				right: 81%;
+			}
+		}
+		
+		&--contrast {
+			
+			& .editor__toggle {
+				right: 46%;
+			}
+		}
+		
+		&::after {
+			content: '';
+			
+			position: absolute;
+			bottom: -24px;
+			left: -30%;
+			
+			width: 136%;
+			height: 1px;
+			
+			background-color: @main-color;
+			opacity: 0.1;
+		}
+	}
+	
+	.editor__button-wrapper	{
+		margin-top: auto;
+	}
+	
+	.editor__button {
+		margin-bottom: 24px;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
