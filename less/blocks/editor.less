@@ -147,7 +147,7 @@
 
 @media (min-width: @tablet-width) {
 	.editor {
-		padding-top: 57px;
+		padding: 57px 0;
 		
 		&::after {
 			content: none;
@@ -156,8 +156,10 @@
 
 	.editor__wrapper {
 		width: 94%;
-
+		max-width: 940px;
 		display: flex;
+		
+		box-sizing: border-box;
 	}
 
 	.editor__picture {
@@ -190,11 +192,16 @@
 	.editor__tool {
 		width: 24px;
 		height: 24px;
+		opacity: 1;
 
 		&--contrast {
 			width: 16px;
 			height: 16px;
 		}
+	}
+	
+	.editor__tool svg {
+		fill: @red-color;
 	}
 
 	.editor__range-wrapper {
@@ -255,4 +262,72 @@
 			margin-bottom: 0;
 		}
 	}
+}
+
+@media (min-width: @desktop-width) {
+	.editor {
+		width: 940px;
+		margin: 0 auto;
+		
+		box-sizing: border-box;
+	}
+	
+	.editor__wrapper {
+		width: 800px;
+	}
+	
+	.editor__picture {
+		width: 300px;
+	}
+	
+	.editor__tool {
+		width: 48px;
+		height: 48px;
+
+		&--contrast {
+			width: 32px;
+			height: 32px;
+		}
+	}
+	
+	.editor__item {
+		margin-bottom: 30px;
+	}
+	
+	.editor__tools-wrapper {
+		width: 410px;
+	}
+	
+	.editor__tools-list {
+		padding-top: 0;
+	}
+		
+	.editor__range-wrapper {
+		padding-top: 0;
+	}
+	
+	.editor__range {
+		height: 48px;
+		margin-bottom: 30px;
+		
+		&--blur {
+			margin-bottom: 20px;
+		}
+		
+		&::after {
+			bottom: -13px;
+		}
+	}
+	
+	.editor__button-wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.editor__button {
+		width: 183px;
+		margin-bottom: 0;
+	}
+
 }
