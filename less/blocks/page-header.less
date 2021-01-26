@@ -5,19 +5,20 @@
 	flex-direction: column;
 
 	background-image: url(../img/bg-back-tablet@1x.jpg);
-	background-position: center bottom;
+	background-position: center 0;
 	background-repeat: no-repeat;
+	background-size: 800px auto;
 	background-color: @main-color;
 }
 
-.page-header--photo {
-	background-position: center 0;
-	background-size: 900px 600px;
+.page-header--nojs {
+	background-position: center 258px;
 }
 
 .page-header__title {
 	.mp-reset;
 	margin-bottom: 83px;
+	padding: 0 20px;
 	
 	font-family: "OpenSansLight";
 	font-weight: 300;
@@ -25,6 +26,10 @@
 	line-height: 33px;
 	text-align: center;
 	color: #ffffff;
+}
+
+.page-header__title--contest {
+	margin-bottom: 41px;
 }
 
 .page-header__logo {

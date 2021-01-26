@@ -54,24 +54,28 @@ img {
   display: flex;
   flex-direction: column;
   background-image: url(../img/bg-back-tablet@1x.jpg);
-  background-position: center bottom;
+  background-position: center 0;
   background-repeat: no-repeat;
+  background-size: 800px auto;
   background-color: #283645;
 }
-.page-header--photo {
-  background-position: center 0;
-  background-size: 900px 600px;
+.page-header--nojs {
+  background-position: center 258px;
 }
 .page-header__title {
   margin: 0;
   padding: 0;
   margin-bottom: 83px;
+  padding: 0 20px;
   font-family: "OpenSansLight";
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   text-align: center;
   color: #ffffff;
+}
+.page-header__title--contest {
+  margin-bottom: 41px;
 }
 .page-header__logo {
   position: relative;
@@ -113,11 +117,11 @@ img {
   }
 }
 .main-nav__wrapper {
-  margin-bottom: 380px;
+  margin-bottom: 31px;
   background-color: rgba(0, 0, 0, 0.3);
 }
-.main-nav__wrapper--photo {
-  margin-bottom: 31px;
+.main-nav__wrapper--main {
+  margin-bottom: 380px;
 }
 .main-nav {
   position: relative;
@@ -1907,16 +1911,35 @@ img {
     margin-bottom: 0;
   }
 }
-.contest__title {
-  font-family: "OpenSansLight";
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 33px;
+.contest {
+  padding-top: 47px;
+}
+.contest__wrapper {
+  width: 88%;
+  margin: 0 auto;
 }
 .contest__text {
+  margin: 0;
+  padding: 0;
+  padding: 0 20px;
+  margin-bottom: 34px;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  text-align: center;
+}
+.contest__text span {
+  display: none;
+}
+.contest__group {
+  margin: 0;
+  padding: 0;
+  padding: 0 20px;
+  border: none;
+}
+.contest__group p {
+  margin: 0;
+  padding: 0;
 }
 .contest__legend {
   font-size: 14px;
@@ -1939,33 +1962,55 @@ img {
     font-size: 18px;
   }
 }
+.form__wrapper {
+  padding: 0 20px;
+  background-color: #f2f2f2;
+}
 .form__title {
+  display: block;
+  padding: 36px 30px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
   color: #d22856;
 }
 .form__label {
+  position: relative;
+  display: block;
   line-height: 30px;
 }
 .form__label--red {
+  margin-bottom: 7px;
   font-size: 14px;
   text-transform: uppercase;
   color: #d22856;
 }
 .form__label--blue {
+  padding: 7px 0px 3px 70px;
+  margin-bottom: 0;
   font-size: 18px;
   color: #283645;
 }
 .form__input {
+  width: 100%;
+  padding: 15px 20px 12px;
+  margin-bottom: 19px;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+  box-sizing: border-box;
 }
 .form__input::placeholder {
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+}
+.form__achievements {
+  padding: 0;
+  padding-bottom: 36px;
 }
 .form__button {
   line-height: 30px;

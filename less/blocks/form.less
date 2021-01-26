@@ -1,35 +1,67 @@
+.form__wrapper {
+	padding: 0 20px;
+	
+	background-color: #f2f2f2;
+}
+
 .form__title {
+	display: block;
+	padding: 36px 30px;
+	
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
+	text-align: center;
 	color: @red-color;
 }
 
 .form__label {
+	position: relative;
+	
+	display: block;
+	
 	line-height: 30px;
 }
 
 .form__label--red {
+	margin-bottom: 7px;
+	
 	font-size: 14px;
 	text-transform: uppercase;
 	color: @red-color;
 }
 
 .form__label--blue {
+	padding: 7px 0px 3px 70px;
+	margin-bottom: 0;
+	
 	font-size: 18px;
 	color: @main-color;
 }
 
 .form__input {
+	width: 100%;
+	padding: 15px 20px 12px;
+	margin-bottom: 19px;
+	
 	font-size: 18px;
 	line-height: 30px;
 	color: @main-color;
+	border: 2px solid #e5e5e5;
+	border-radius: 3px;
+	
+	box-sizing: border-box;
 
 	&::placeholder {
 		font-size: 18px;
 		line-height: 30px;
 		color: @main-color;
 	}
+}
+
+.form__achievements {
+	padding: 0;
+	padding-bottom: 36px;
 }
 
 .form__button {

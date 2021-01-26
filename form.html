@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<header class="page-header">
+	<header class="page-header page-header--nojs">
 		<div class="main-nav__wrapper">
 			<nav class="main-nav main-nav--closed main-nav--nojs">
 				<a class="page-header__logo">
@@ -31,90 +31,94 @@
 				</ul>
 			</nav>
 		</div>
+		<p class="page-header__title page-header__title--contest">Конкурс на самое безбашенное путешествие с Пинк</p>
 	</header>
 
 	<main>
 		<section class="contest">
-			<p class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</p>
-			<p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-			<form action="" class="contest__form form">
-				<fieldset class="form__personal-info">
-					<p>
-						<label class="form__label form__label--red" for="surname">Фамилия:</label>
-						<input class="form__input" type="text" id="surname" placeholder="Укажите фамилию *">
-					</p>
-					<p>
-						<label class="form__label form__label--red" for="name">Имя:</label>
-						<input class="form__input" type="text" id="name" placeholder="Введите ваше имя *">
-					</p>
-					<p>
-						<label class="form__label form__label--red" for="middle-name">Отчество:</label>
-						<input class="form__input" type="text" id="middle-name" placeholder="Ну и отчество тоже">
-					</p>
-				</fieldset>
-				<fieldset class="form__achievements">
-					<legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
-					<p>
-						<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="shark" checked>
-						<label class="form__label form__label--blue" for="shark"><span>Сделал селфи с акулой</span></label>
-					</p>
-					<p>
-						<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="beach" checked>
-						<label class="form__label form__label--blue" for="beach"><span>Обгорел на пляже</span></label>
-					</p>
-					<p>
-						<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="chack">
-						<label class="form__label form__label--blue" for="chack"><span>Видел Чака Норриса</span></label>
-					</p>
-					<p>
-						<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="souvenir">
-						<label class="form__label form__label--blue" for="souvenir"><span>Накупил сувениров</span></label>
-					</p>
-					<p>
-						<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="tower" checked>
-						<label class="form__label form__label--blue" for="tower"><span>Удержал башню</span></label>
-					</p>
-					<p>
-						<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="hotel">
-						<label class="form__label form__label--blue" for="hotel"><span>Разгромил отель</span></label>
-					</p>
-				</fieldset>
-				<fieldset class="form__contacts">
-					<legend class="form__title">Контактная информация</legend>
-					<p>
-						<label class="form__label form__label--red" for="phone">Номер телефона</label>
-						<input class="form__input" type="text" id="phone" placeholder="Номер, пожалуйста">
+			<div class="contest__wbrapper">
+				<p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
+				<form action="" class="contest__form form">
+					<fieldset class="form__personal-info contest__group">
+						<p>
+							<label class="form__label form__label--red" for="surname">Фамилия:</label>
+							<input class="form__input" type="text" id="surname" placeholder="Укажите фамилию *">
+						</p>
+						<p>
+							<label class="form__label form__label--red" for="name">Имя:</label>
+							<input class="form__input" type="text" id="name" placeholder="Введите ваше имя *">
+						</p>
+						<p>
+							<label class="form__label form__label--red" for="middle-name">Отчество:</label>
+							<input class="form__input" type="text" id="middle-name" placeholder="Ну и отчество тоже">
+						</p>
+					</fieldset>
+					<fieldset class="form__achievements contest__group">
+					<div class="form__wrapper">
+						<legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+						<p>
+							<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="shark" checked>
+							<label class="form__label form__label--blue" for="shark"><span>Сделал селфи с акулой</span></label>
+						</p>
+						<p>
+							<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="beach" checked>
+							<label class="form__label form__label--blue" for="beach"><span>Обгорел на пляже</span></label>
+						</p>
+						<p>
+							<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="chack">
+							<label class="form__label form__label--blue" for="chack"><span>Видел Чака Норриса</span></label>
+						</p>
+						<p>
+							<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="souvenir">
+							<label class="form__label form__label--blue" for="souvenir"><span>Накупил сувениров</span></label>
+						</p>
+						<p>
+							<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="tower" checked>
+							<label class="form__label form__label--blue" for="tower"><span>Удержал башню</span></label>
+						</p>
+						<p>
+							<input class="visually-hidden form__achievement-checkbox" type="checkbox" id="hotel">
+							<label class="form__label form__label--blue" for="hotel"><span>Разгромил отель</span></label>
+						</p>
+						</div>
+					</fieldset>
+					<fieldset class="form__contacts contest__group">
+						<legend class="form__title">Контактная информация</legend>
+						<p>
+							<label class="form__label form__label--red" for="phone">Номер телефона</label>
+							<input class="form__input" type="text" id="phone" placeholder="Номер, пожалуйста">
 
-					</p>
-					<p>
-						<label class="form__label form__label--red" for="post">Адрес почты</label>
-						<input class="form__input" type="text" id="post" placeholder="Введите почту *">
-					</p>
-				</fieldset>
-				<fildset class="form__application">
-					<legend class="form__title">С каким приложением путешествовали?</legend>
-					<p>
-						<input class="visually-hidden form__radio" type="radio" name="radio" id="ios" checked>
-						<label class="form__label form__label--blue" for="ios">Pink для iOS</label>
-					</p>
-					<p>
-						<input class="visually-hidden form__radio" type="radio" name="radio" id="android">
-						<label class="form__label form__label--blue" for="android">Pink на Android</label>
-					</p>
-					<p>
-						<input class="visually-hidden form__radio" type="radio" name="radio" id="windows">
-						<label class="form__label form__label--blue" for="windows">Windows Phone</label>
-					</p>
-				</fildset>
-				<fieldset class="form__emotions">
-					<legend class="form__title">Опишите свои эмоции</legend>
-					<textarea class="form__input" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-				</fieldset>
-				<button class="form__button button" type="submit">Отправить форму</button>
-			</form>
-			<small class="contest__legend">
-				<sup>*</sup> — обязательные <span>для заполнения</span> поля
-			</small>
+						</p>
+						<p>
+							<label class="form__label form__label--red" for="post">Адрес почты</label>
+							<input class="form__input" type="text" id="post" placeholder="Введите почту *">
+						</p>
+					</fieldset>
+					<fildset class="form__application contest__group">
+						<legend class="form__title">С каким приложением путешествовали?</legend>
+						<p>
+							<input class="visually-hidden form__radio" type="radio" name="radio" id="ios" checked>
+							<label class="form__label form__label--blue" for="ios">Pink для iOS</label>
+						</p>
+						<p>
+							<input class="visually-hidden form__radio" type="radio" name="radio" id="android">
+							<label class="form__label form__label--blue" for="android">Pink на Android</label>
+						</p>
+						<p>
+							<input class="visually-hidden form__radio" type="radio" name="radio" id="windows">
+							<label class="form__label form__label--blue" for="windows">Windows Phone</label>
+						</p>
+					</fildset>
+					<fieldset class="form__emotions contest__group">
+						<legend class="form__title">Опишите свои эмоции</legend>
+						<textarea class="form__input" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+					</fieldset>
+					<button class="form__button button" type="submit">Отправить форму</button>
+				</form>
+				<small class="contest__legend">
+					<sup>*</sup> — обязательные <span>для заполнения</span> поля
+				</small>
+			</div>
 		</section>
 	</main>
 
@@ -145,18 +149,20 @@
 	<script>
 		var navMain = document.querySelector(".main-nav");
 		var navToggle = document.querySelector(".main-nav__toggle");
+		var pageHeader = document.querySelector(".page-header");
 
-		navMain.classList.remove("main-nav--nojs");
+		navMain.classList.remove("main-nav--nojs"), pageHeader.classList.remove("page-header--nojs"),
 
-		navToggle.addEventListener("click", function() {
-			if (navMain.classList.contains("main-nav--closed")) {
-				navMain.classList.remove("main-nav--closed");
-				navMain.classList.add("main-nav--opened");
-			} else {
-				navMain.classList.add("main-nav--closed");
-				navMain.classList.remove("main-nav--opened");
-			}
-		});
+			navToggle.addEventListener("click", function() {
+				if (navMain.classList.contains("main-nav--closed")) {
+					navMain.classList.remove("main-nav--closed");
+					navMain.classList.add("main-nav--opened");
+				} else {
+					navMain.classList.add("main-nav--closed");
+					navMain.classList.remove("main-nav--opened");
+				};
+				pageHeader.classList.toggle("page-header--nojs")
+			});
 
 	</script>
 </body>
