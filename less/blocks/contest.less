@@ -23,15 +23,12 @@
 }
 
 .contest__group {
+	width: 100%;
 	display: block;
 	.mp-reset;
 	padding: 0 20px;
 	
 	border: none;
-	
-	& p {
-		.mp-reset;
-	}
 }
 
 .contest__legend {
@@ -59,16 +56,37 @@
 }
 
 @media (min-width: @tablet-width) {
-	.contacts {
-		padding-top: 65px;
-	}
-	
-	.contest__title {
-		font-size: 50px;
-		line-height: 68px;
+	.contest {
+		max-width: 940px;
+		padding-top: 95px;
+		padding-bottom: 48px;
+		margin: 0 auto;
+		
+		box-sizing: border-box;
 	}
 	
 	.contest__text {
+		padding: 0 67px;
+		margin-bottom: 68px;
+		
 		font-size: 18px;
+		
+		& span {
+			display: block;
+		}
+	}
+	
+	.contest__group {
+		margin-bottom: 70px;
+		
+		border: 2px solid #e5e5e5;
+		border-radius: 3px;
+	}
+	
+	.contest__legend {
+		width: auto;
+		.mp-reset;
+		
+		text-align: right;
 	}
 }
