@@ -23,6 +23,7 @@
 }
 
 .contest__group {
+	display: block;
 	.mp-reset;
 	padding: 0 20px;
 	
@@ -34,14 +35,27 @@
 }
 
 .contest__legend {
+	display: block;
+	width: 100%;
+	padding: 0 20px;
+	margin-top: 36px;
+	margin-bottom: 17px;
+	
 	font-size: 14px;
 	line-height: 30px;
 	text-transform: uppercase;
+	text-align: center;
 	color: @main-color;
-}
-
-.contest__legend sup {
-	color: @red-color;
+	
+	box-sizing: border-box;
+	
+	& span {
+		display: none;
+	}
+	
+	& sup {
+		color: @red-color;
+	}
 }
 
 @media (min-width: @tablet-width) {

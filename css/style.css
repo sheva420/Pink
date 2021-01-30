@@ -86,7 +86,7 @@ img {
   padding-left: 22px;
 }
 @media (min-width: 660px) {
-  .page-header--photo {
+  .page-header {
     background-size: auto;
   }
   .page-header__logo {
@@ -469,6 +469,7 @@ img {
     padding-bottom: 103px;
     padding-top: 18px;
     background-image: url(../img/iphone-hand-tablet@1x.png);
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-color: transparent;
   }
@@ -1932,6 +1933,7 @@ img {
   display: none;
 }
 .contest__group {
+  display: block;
   margin: 0;
   padding: 0;
   padding: 0 20px;
@@ -1942,10 +1944,20 @@ img {
   padding: 0;
 }
 .contest__legend {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 36px;
+  margin-bottom: 17px;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  text-align: center;
   color: #283645;
+  box-sizing: border-box;
+}
+.contest__legend span {
+  display: none;
 }
 .contest__legend sup {
   color: #d22856;
@@ -1963,7 +1975,7 @@ img {
   }
 }
 .form__wrapper {
-  padding: 0 20px;
+  padding: 0 20px 44px;
   background-color: #f2f2f2;
 }
 .form__title {
@@ -1981,16 +1993,46 @@ img {
   line-height: 30px;
 }
 .form__label--red {
+  margin-left: 23px;
   margin-bottom: 7px;
   font-size: 14px;
   text-transform: uppercase;
   color: #d22856;
 }
 .form__label--blue {
-  padding: 7px 0px 3px 70px;
-  margin-bottom: 0;
+  padding: 4px 0px 5px 70px;
+  margin-bottom: 43px;
   font-size: 18px;
   color: #283645;
+}
+.form__input-wrapper:last-child .form__label--blue {
+  margin-bottom: 0;
+}
+.form__achievement-checkbox + .form__label {
+  position: relative;
+}
+.form__achievement-checkbox + .form__label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+}
+.form__achievement-checkbox:checked + .form__label::after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  width: 22px;
+  height: 16px;
+  background-image: url(../img/icon-yes-red.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .form__input {
   width: 100%;
@@ -2010,11 +2052,59 @@ img {
 }
 .form__achievements {
   padding: 0;
-  padding-bottom: 36px;
+}
+.form__contacts {
+  padding-top: 34px;
+}
+.form__contacts .form__title {
+  display: none;
+}
+.form__application {
+  padding: 0;
+}
+.form__radio + .form__label {
+  position: relative;
+}
+.form__radio + .form__label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+.form__radio:checked + .form__label::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 14px;
+  height: 14px;
+  background-color: #d22856;
+  border-radius: 50%;
+}
+.form__emotions .form__title {
+  padding: 34px 48px 12px;
+}
+.form__input--textarea {
+  height: 197px;
+  margin-bottom: 0;
+}
+.form__button-wrapper {
+  padding: 0 20px;
+  margin-top: 48px;
 }
 .form__button {
+  width: 100%;
+  padding: 16px 0;
   line-height: 30px;
+  text-transform: uppercase;
   background-color: #2aab6d;
+  border: none;
+  border-radius: 3px;
 }
 @media (min-width: 660px) {
   .form__title {
