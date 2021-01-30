@@ -1939,6 +1939,7 @@ img {
   padding: 0;
   padding: 0 20px;
   border: none;
+  box-sizing: border-box;
 }
 .contest__legend {
   display: block;
@@ -1973,7 +1974,7 @@ img {
     font-size: 18px;
   }
   .contest__text span {
-    display: block;
+    display: inline;
   }
   .contest__group {
     margin-bottom: 70px;
@@ -1985,6 +1986,17 @@ img {
     margin: 0;
     padding: 0;
     text-align: right;
+  }
+}
+@media (min-width: 1200px) {
+  .contest {
+    padding-bottom: 0;
+  }
+  .contest__group {
+    margin-bottom: 55px;
+  }
+  .contest__legend span {
+    display: inline;
   }
 }
 .form__wrapper {
@@ -2147,7 +2159,7 @@ img {
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 52px;
+    margin-bottom: 54px;
   }
   .form__input {
     margin-bottom: 0;
@@ -2190,7 +2202,7 @@ img {
     margin: -15px 10% 40px 10%;
   }
   .form__application .form__input-wrapper {
-    margin-bottom: 36px;
+    margin-bottom: 34px;
   }
   .form__application .form__input-wrapper:last-child {
     margin-bottom: 54px;
@@ -2244,5 +2256,74 @@ img {
   }
   .form__button {
     width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .form {
+    padding: 0;
+    justify-content: space-between;
+  }
+  .form__wrapper {
+    padding: 0 58px;
+  }
+  .form__input-wrapper:last-child {
+    margin-bottom: 0;
+  }
+  .form__personal-info {
+    width: 435px;
+    padding: 0;
+    padding-top: 6px;
+  }
+  .form__application {
+    width: 435px;
+  }
+  .form__application .form__title {
+    width: 368px;
+    margin: 0 auto;
+    margin: -15px auto 40px;
+  }
+  .form__application .form__input-wrapper {
+    padding: 0 74px;
+  }
+  .form__application .form__input-wrapper:last-child {
+    margin-bottom: 54px;
+  }
+  .form__application .form__wrapper {
+    padding: 0;
+  }
+  .form__contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form__contacts .form__input-wrapper {
+    width: 371px;
+  }
+  .form__achievements {
+    padding-bottom: 12px;
+  }
+  .form__achievements .form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form__achievements .form__title {
+    width: 100%;
+  }
+  .form__achievements .form__input-wrapper {
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 43px;
+  }
+  .form__achievements .form__input-wrapper:nth-child(3n+1) {
+    margin-right: 0;
+  }
+  .form__achievements .form__label--blue {
+    padding-left: 60px;
+  }
+  .form__emotion {
+    padding: 0 58px;
+    margin-bottom: 65px;
+  }
+  .form__input--textarea {
+    height: 124px;
   }
 }

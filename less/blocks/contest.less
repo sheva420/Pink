@@ -29,6 +29,7 @@
 	padding: 0 20px;
 	
 	border: none;
+	box-sizing: border-box;
 }
 
 .contest__legend {
@@ -72,7 +73,7 @@
 		font-size: 18px;
 		
 		& span {
-			display: block;
+			display: inline;
 		}
 	}
 	
@@ -88,5 +89,22 @@
 		.mp-reset;
 		
 		text-align: right;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.contest {
+		padding-bottom: 0;
+	}
+	
+	.contest__group {
+		margin-bottom: 55px;
+	}
+	
+	.contest__legend {
+		
+		& span {
+			display: inline;
+		}
 	}
 }
