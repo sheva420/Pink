@@ -7,6 +7,18 @@
 	margin: 0 auto;
 }
 
+.page-footer__logo-image {
+	
+	&--desktop {
+		display: none;
+	}
+	
+	&:hover path,
+	&:focus path {
+		fill: @red-color;
+	}
+}
+
 .page-footer__social {
 	margin-top: 35px;
 }
@@ -44,5 +56,16 @@
 @media (min-width: @desktop-width) {
 	.page-footer {
 		padding: 70px 0;
+	}
+	
+	.page-footer__logo-image {
+		
+		&--mobile {
+			display: none;
+		}
+		
+		&--desktop {
+			display: block;
+		}
 	}
 }

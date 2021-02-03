@@ -14,9 +14,19 @@
 	
 	font-size: 0px;
 	
-	background-color: #bec2c7;
+	background-color: @main-color;
 	border: 3px solid #ffffff;
 	border-radius: 50%;
+	opacity: 0.3;
+	
+	&:hover,
+	&:focus {
+		opacity: 0.6;
+	}
+	
+	&:active {
+		opacity: 0.1;
+	}
 
 	&--active {
 		background-color: #ffffff;

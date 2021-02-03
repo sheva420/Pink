@@ -20,6 +20,15 @@
 	background-image: url(../img/logo-htmlacademy.svg);
 	background-position: 0 0;
 	background-repeat: no-repeat;
+	
+	&:hover path,
+	&:focus path {
+		fill: @main-color;
+	}
+	
+	&:active {
+		opacity: 0.3;
+	}
 }
 
 @media (min-width: @desktop-width) {

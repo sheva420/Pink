@@ -20,9 +20,19 @@
 
 
 	background-color: #ffffff;
-	border: 3px solid #e9ebec;
+	border: 3px solid rgba(40, 54, 69, 0.1);
 	border-radius: 50%;
 	font-size: 0px;
+	
+	&:hover,
+	&:focus {
+		border: 3px solid rgba(40, 54, 69, 1);
+	}
+	
+	&:active {
+		border: 3px solid rgba(40, 54, 69, 0.3);
+		opacity: 0.3;
+	}
 }
 
 .social__link--twitter {
