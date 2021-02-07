@@ -67,10 +67,20 @@
 	border: none;
 	opacity: 0.3;
 	background-color: transparent;
+	
+	&:hover,
+	&:focus {
+		opacity: 0.6;
+	}
 }
 
 .editor__tool--active {
 	opacity: 1;
+	
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
 }
 
 .editor__tool--active svg {
@@ -113,6 +123,11 @@
 	border: 2px solid @red-color;
 	border-radius: 50%;
 	transform: translateY(-50%);
+	
+	&:hover {
+		background-color: @red-color;
+		cursor: pointer;
+	}
 }
 
 .editor__range--cut .editor__toggle {
@@ -136,12 +151,40 @@
 .editor__button--post {
 	color: @red-color;
 	border-color: @red-color;
+	
+	&:hover,
+	&:focus {
+		background-color: @red-color;
+		color: #ffffff;
+		cursor: pointer;
+		outline: none;
+	}
+	
+	&:active span {
+		opacity: 0.3;
+	}
 }
 
 .editor__button--cancel {
 	color: @main-color;
 	border-color: @main-color;
 	opacity: 0.1;
+	
+	&:hover,
+	&:focus {
+		opacity: 0.3;
+		cursor: pointer;
+		outline: none;
+	}
+	
+	&:active {
+		background-color: @main-color;
+		color: #ffffff;
+		
+		& span {
+			opacity: 0.3;
+		}
+	}
 }
 
 

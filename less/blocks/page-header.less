@@ -40,11 +40,14 @@
 	display: block;
 	padding: 20px 0px;
 	padding-left: 22px;
+	
+	&:hover {
+		cursor: pointer;
+	}
 
 	&:hover .page-header__logo-image path,
 	&:focus .page-header__logo-image path {
 		fill: @red-color;
-		cursor: pointer;
 	}
 	
 	&:active .page-header__logo-image path {

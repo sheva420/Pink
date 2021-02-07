@@ -13,6 +13,7 @@
 
 .reviews__item {
 	.mp-reset;
+	display: none;
 
 	text-align: center;
 }
@@ -64,6 +65,10 @@
 
 .reviews__button {
 	display: none;
+}
+
+.reviews__item--show {
+	display: block;
 }
 
 @media (min-width: @tablet-width) {
@@ -166,6 +171,7 @@
 		
 		background: none;
 		border: none;
+		opacity: 0.3;
 		
 		&::before {
 			content: '';
@@ -177,7 +183,7 @@
 			width: 30px;
 			height: 3px;
 			
-			background-color: #bec2c7;
+			background-color: @main-color;
 			transform: rotate(-45deg);
 		}
 		
@@ -191,8 +197,18 @@
 			width: 30px;
 			height: 3px;
 			
-			background-color: #bec2c7;
+			background-color: @main-color;
 			transform: rotate(45deg);
+		}
+		
+		&:hover,
+		&:focus {
+			opacity: 0.6;
+			outline: none;
+		}
+		
+		&:active {
+			opacity: 0.1;
 		}
 	}
 	
